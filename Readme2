@@ -1,0 +1,14 @@
+STOCK MARKET PREDICTION 
+
+This code performs stock market price prediction using Long Short-Term Memory (LSTM) neural networks:
+
+1. It loads historical stock price data from a CSV file and preprocesses the data by scaling it using MinMaxScaler.
+2. The data is divided into training and testing sets, and sequences of stock prices are created with a given window size.
+3. A sequential LSTM model is constructed with two LSTM layers and a dense output layer.
+4. The model is compiled with the Adam optimizer and mean squared error loss function.
+5. The LSTM model is trained on the training sequences for a specified number of epochs and batch size.
+6. The model predicts stock prices for the test sequences.
+7. The predicted prices are inverse-transformed to their original scale.
+8. The Root Mean Squared Error (RMSE) is calculated between the predicted and actual prices for evaluation.
+9. The predicted and actual stock prices are plotted to visualize the model's performance.
+10. The code combines data preprocessing, LSTM modeling, training, evaluation, and plotting to predict stock prices.
